@@ -24,6 +24,9 @@ public class JavaEEToSpringBoot extends TransformationTemplate {
 
     public JavaEEToSpringBoot() {
 
+       // final String junitArtifact = add(new PomModel("junit","junit", "4.12"));
+       // final String junitPackaging = add(new PomGetPackaging(junitArtifact));
+
         // Checking first it the app has a root pom.xml file,
         // and aborting if not
         final String pomFileExists = add(new FileExists().relative("pom.xml"));
