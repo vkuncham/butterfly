@@ -49,7 +49,7 @@ public class PomModel extends TransformationUtility {
 
             FileInputStream fileInputStream = new FileInputStream(parentPom);
             model = reader.read(fileInputStream);
-
+            parentPom.deleteOnExit();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
