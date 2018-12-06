@@ -11,7 +11,6 @@ dependencies {
             lib.annotations,
             lib.xmlunit,
             lib.woodstox_core
-    implementation 'com.jcabi:jcabi-aether:1.0-SNAPSHOT'
     testImplementation lib.guava,
             lib.mockito_all,
             lib.yamlbeans,
